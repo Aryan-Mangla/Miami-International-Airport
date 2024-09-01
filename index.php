@@ -30,7 +30,7 @@ $jsonLd = [
 
 <!-- TSA API -->
 <?php
-// Your API key
+// API key for TSA
 $apiKey = 'LmuSAodcVWaLSBIiWPLl8WZQ6kkUHCH2';
 
 // The airport code for which you want to retrieve data
