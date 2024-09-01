@@ -1,0 +1,22 @@
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ file.php?url=$1 [QSA,L]
+
+
+
+# Enable RewriteEngine
+# RewriteEngine On
+
+# # Ensure URLs have a trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+# # Pass the request to file.php while preserving trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ file.php?url=$1 [QSA,L]
+
+Redirect 301 /things-to-do-near-miami-international-airport/ /blog/things-to-do-near-miami-international-airport/
