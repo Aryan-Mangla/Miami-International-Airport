@@ -22,7 +22,7 @@ session_start(); // Start the session to store user authentication status
 $servername = 'localhost';
 $username = 'root';
 $password = 'Aaryan@db';
-$dbname = 'wordpress';
+$dbname = 'miami';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

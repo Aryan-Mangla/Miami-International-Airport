@@ -971,7 +971,7 @@ function truncateText($text, $maxLength = 100) {
 <!-- Contact Section End -->
 <!-- Blogs -->
 <div class="container-fluid p-md-5 p-4">
-    <h2 class="fw-bolder fs-3 text-center">Our Latest <span class="theme-color">Blogs</span></h2>
+    <h2 class="fw-bolder fs-3 text-center">Latest <span class="theme-color">Blogs</span></h2>
     <p class="text-center mb-4 fs-3">Discover the Heartbeat of Travel: Miami International Airport</p>
     <div class="row g-4">
         <?php
